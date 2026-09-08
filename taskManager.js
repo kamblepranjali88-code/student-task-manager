@@ -1,4 +1,4 @@
-function addTask(tasks, taskName, priority = "Medium") {
+function addTask(tasks, taskName,) {
     if (!taskName || taskName.trim() === "") {
         throw new Error("Task name cannot be empty");
     }
@@ -6,7 +6,6 @@ function addTask(tasks, taskName, priority = "Medium") {
     const task = {
         id: tasks.length + 1,
         name: taskName,
-        priority: priority,
         completed: false
     };
 

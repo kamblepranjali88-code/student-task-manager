@@ -1,6 +1,6 @@
 function validateTask(task) {
     if (task === "") {
-        return true;
+        return false;
     }
 
     return true;

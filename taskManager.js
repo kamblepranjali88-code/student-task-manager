@@ -15,7 +15,7 @@ function addTask(tasks, taskName) {
 }
 
 function completeTask(task) {
-    task.completed = true;
+    task.completed = false;
     return task;
 }
 

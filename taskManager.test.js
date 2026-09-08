@@ -3,7 +3,11 @@ const { addTask, completeTask } = require("./taskManager");
 function testAddTask() {
     const tasks = [];
 
-    const task = addTask(tasks, "Complete Jenkins Assignment");
+    const task = addTask(
+        tasks,
+        "Complete Jenkins Assignment",
+        "High"
+    );
 
     if (tasks.length !== 1) {
         throw new Error("Test Failed: Task was not added");
@@ -13,7 +17,11 @@ function testAddTask() {
         throw new Error("Test Failed: Incorrect task name");
     }
 
-    console.log("PASS: Add Task test");
+    if (task.priority !== "High") {
+        throw new Error("Test Failed: Task priority was not set correctly");
+    }
+
+    console.log("PASS: Add Task with Priority test");
 }
 
 function testCompleteTask() {

@@ -1,4 +1,4 @@
-function addTask(tasks, taskName, priority = "Medium") {
+function addTask(tasks, taskName,priority) {
     if (!taskName || taskName.trim() === "") {
         throw new Error("Task name cannot be empty");
     }
@@ -11,6 +11,7 @@ function addTask(tasks, taskName, priority = "Medium") {
     };
 
     tasks.push(task);
+
     return task;
 }
 

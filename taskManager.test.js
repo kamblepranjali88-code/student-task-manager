@@ -39,6 +39,10 @@ function testCompleteTask() {
 
     console.log("PASS: Complete Task test");
 }
+function testNewFeature()
+{
+    console.log("Pass:New Feature Test");
+}
 
 function testEmptyTask() {
     const tasks = [];
@@ -61,5 +65,6 @@ function testEmptyTask() {
 testAddTask();
 testCompleteTask();
 testEmptyTask();
+testNewFeature();
 
 console.log("ALL TESTS PASSED");

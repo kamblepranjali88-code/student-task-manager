@@ -1,17 +1,18 @@
 {
   "name": "student-task-manager",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
- "scripts": {
-  "build": "echo Building Student Task Manager application... && echo Build completed successfully!"
-},
+  "description": "Student Task Manager with automated testing",
+  "main": "taskManager.js",
+  "scripts": {
+    "test": "node taskManager.test.js",
+    "build": "echo Building Student Task Manager... && echo Build completed successfully!"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kamblepranjali88-code/student-task-manager.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pranjali",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {

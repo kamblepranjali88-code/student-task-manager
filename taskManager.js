@@ -6,7 +6,7 @@ function addTask(tasks, taskName, priority = "Medium") {
     const task = {
         id: tasks.length + 1,
         name: taskName,
-        priority: priority,
+        priority:priority,
         completed: false
     };
 

@@ -4,7 +4,7 @@
   "description": "Student Task Manager with automated testing",
   "main": "taskManager.js",
   "scripts": {
-    "test": "node taskManager.test.js",
+    "test": "node validation.test.js",
     "build": "echo Building Student Task Manager... && echo Build completed successfully!"
   },
   "repository": {
